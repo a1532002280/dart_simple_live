@@ -12,11 +12,8 @@ jobs:
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.27.0'
+          flutter-version: '3.28.0'   # ← 关键！
           channel: 'stable'
-
-      - name: Clean pub cache
-        run: flutter pub cache clean -f
 
       - name: Install dependencies
         run: |
